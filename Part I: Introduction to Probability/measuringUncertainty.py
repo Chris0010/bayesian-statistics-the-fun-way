@@ -1,5 +1,5 @@
 # What is the probability of tolling two six-sided dice and getting a value greater than 7?
-def twodice(sides, num):
+def two_dice(sides, num):
     n = 0
     m = 0
     for i in range(1, sides+1):
@@ -11,7 +11,7 @@ def twodice(sides, num):
 
 
 # What is the probability of rolling three six-sided dice and getting a value greater than 7?
-def threedice(sides, num):
+def three_dice(sides, num):
     n = 0
     m = 0
     for i in range(1, sides+1):
@@ -24,12 +24,12 @@ def threedice(sides, num):
 
 
 # You have to pay $30 if Red Sox win and your friend only pays $5 if they win, what's the assigned probability?
-def oddsprob(alot, alittle):
-    odds = alot/alittle
+def odds_prob(a_lot, a_little):
+    odds = a_lot / a_little
     return "The assigned probability is {}/{}".format(int(odds), int(odds+1))
 
 
 if __name__ == "__main__":
-    two = twodice(6, 7)
-    three = threedice(6, 7)
-    redsox = oddsprob(30, 5)
+    two = two_dice(6, 7)
+    three = three_dice(6, 7)
+    four = odds_prob(30, 5)
