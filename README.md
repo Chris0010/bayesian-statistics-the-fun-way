@@ -1,5 +1,5 @@
 # Bayesian Statistics the Fun Way
-=================================
+
 **_This repo will serve as a location for notes and python code for studies in the book_** Bayesian Statistics the Fun 
 Way.
 **_The book is written for the coursework to be completed in R, but for an individual exercise this repo will outline 
