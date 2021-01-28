@@ -1,4 +1,4 @@
-# What is the probability of tolling two six-sided dice and getting a value greater than 7?
+# What is the probability of rolling two six-sided dice and getting a value greater than 7?
 def two_dice(sides, num):
     n = 0
     m = 0
