@@ -12,8 +12,8 @@ def and_prob(*events):
     return prob
 
 
-# Raw eggs have a 1/20000 chance of having or_prob.
-# If you eat two raw eggs, what is the probability you ate an egg with or_prob?
+# Raw eggs have a 1/20000 chance of having salmonella.
+# If you eat two raw eggs, what is the probability you ate an egg with salmonella?
 def or_prob(times, *events):
     prob: int = 0
     mutual: int = 1
