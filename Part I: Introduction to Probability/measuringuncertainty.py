@@ -25,8 +25,7 @@ def three_dice(sides, num):
 
 # You have to pay $30 if Red Sox win and your friend only pays $5 if they win, what's the assigned probability?
 def odds_prob(a_lot, a_little):
-    odds = a_lot / a_little
-    return "The assigned probability is {}/{}".format(int(odds), int(odds+1))
+    return "The assigned probability is {}/{}".format(int(a_lot / a_little), int(a_lot / a_little + 1))
 
 
 if __name__ == "__main__":

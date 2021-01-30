@@ -19,7 +19,6 @@ def or_prob(times, *events):
     mutual: int = 1
     for event in events:
         prob += event * times
-    for event in events:
         mutual *= event_prob(event, times)
     return prob - mutual
 
@@ -27,9 +26,8 @@ def or_prob(times, *events):
 # What is the probability of getting two heads in two coin tosses or
 # rolling three sixes in three 6-sided dice rolls?
 def or_two_prob(times1, times2, event1, event2):
-    one = event_prob(event1, times1)
-    two = event_prob(event2, times2)
-    return one + two - and_prob(one, two)
+    return event_prob(event1, times1) + event_prob(event2, times2) - \
+           and_prob(event_prob(event1, times1), event_prob(event2, times2))
 
 
 if __name__ == "__main__":

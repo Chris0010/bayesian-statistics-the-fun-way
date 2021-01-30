@@ -1,3 +1,4 @@
+# What is the probability of rolling two six-sided dice and getting a value greater than 7?
 sides <- c(1:6)
 count1 <- 0
 for(roll1 in sides){
@@ -6,6 +7,7 @@ for(roll1 in sides){
   }
 }
 
+# What is the probability of rolling three six-sided dice and getting a value greater than 7?
 count2 <- 0
 for(roll1 in sides){
   for(roll2 in sides){
@@ -15,6 +17,7 @@ for(roll1 in sides){
   }
 }
 
+# You have to pay $30 if Red Sox win and your friend only pays $5 if they win, what's the assigned probability?
 bet1 <- 30
 bet2 <- 5
-assigned_prob <- ifelse(bet1 > bet2, (bet1 / bet2) / ((bet1 / bet2) + 1), (bet2 / bet1) / ((bet2 / bet1) + 1))
+assigned.prob <- ifelse(bet1 > bet2, (bet1 / bet2) / ((bet1 / bet2) + 1), (bet2 / bet1) / ((bet2 / bet1) + 1))
